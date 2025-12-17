@@ -5,7 +5,7 @@
     // Disable inline autocomplete suggestions from Copilot
     "github.copilot.inlineSuggest.enable": false,
     // Optionally, keep general inline suggestions off too
-    // "editor.inlineSuggest.enabled": false,
+    "editor.inlineSuggest.enabled": false,
     // Keep Copilot Chat enabled so students can ASK for help,
     // but they won't get full auto-completed solutions as they type.
     "github.copilot.chat.enable": true,
