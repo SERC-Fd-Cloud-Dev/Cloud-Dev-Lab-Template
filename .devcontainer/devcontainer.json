@@ -12,7 +12,7 @@
     // "forwardPorts": [],
 
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": ".devcontainer/scripts/check-features.sh",
+    "postCreateCommand": ".devcontainer/scripts/check-features.sh && code --install-extension https://github.com/SERC-Cloud-Dev-DF2A-2526/VS-Code-Extensions/releases/download/v0.0.2/services-manager-0.0.2.vsix",
 
     // Configure tool-specific properties.
     "customizations": {
