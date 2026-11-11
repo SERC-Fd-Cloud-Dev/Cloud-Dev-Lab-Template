@@ -2,7 +2,7 @@
 
 <Brief description and overview>
 
-**Time**: <estimated time>
+**Time**: <estimated time>  
 **Prerequisites**: <required knowledge/skills>
 
 [skip to exercises](#exercises)
@@ -51,6 +51,7 @@
 1. [Exercise 1](exercise-1.md): …
 2. [Exercise 2](exercise-2.md): …
 …
+
 ★ [Homework](homework/homework.md): …
 
 ---
@@ -67,4 +68,4 @@
 
 > **AI use notice**: …
 
-Spot any issues? Please submit an issue or pull request.
+Spot any issues? Please [submit an issue](/issues) or [pull request](/pulls).
