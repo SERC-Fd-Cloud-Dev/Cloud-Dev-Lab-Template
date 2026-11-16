@@ -11,7 +11,7 @@ Full generation and revision of a student's **project** `README.md` is allowed b
 
 **Suggested sections:** overview, confirmed features, prerequisites, local setup, configuration names without secrets, running the service, API docs/usage, testing, verified deployment instructions, limitations and acknowledgements.
 
-**Important distinction:** a lecturer's lab-template `README.md` contains essential exercise instructions. Do not overwrite or remove those instructions. Only revise the student's own project README at the explicit request of the student.
+**Read-only lab instructions:** never edit existing exercise Markdown (lab `README.md`, exercises or homework). Only write a separate student project README when requested; if uncertain, do not edit.
 
 **Boundary:** no production source, Dockerfiles, workflow YAML, configuration, credential files or assessed technical report/evaluation. Example terminal commands may explain how to operate a confirmed project; no prohibited implementation code.
 

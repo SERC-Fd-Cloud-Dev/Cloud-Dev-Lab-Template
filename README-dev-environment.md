@@ -24,7 +24,7 @@ The current assessment permits two specific kinds of generated artefact:
 
 **Automated tests:** You may ask the tutor to write complete unit and integration tests, test-only fixtures/mocks, API/authorisation checks and Postman automated test scripts for behaviour you have specified or implemented. **You must inspect, run and understand these tests.** The tutor must not change your application code to make tests pass or weaken assertions to hide bugs.
 
-**Your project README:** You may ask the tutor to create or improve your project's `README.md` using evidence from the actual repository. Check that setup instructions, example usage and claims about deployment and tests are correct. Do not replace the lab's tutor-written exercise README; that contains the instructions for the practical.
+**Your project README:** You may ask the tutor to create or improve your project's `README.md` using evidence from the actual repository. Check that setup instructions, example usage and claims about deployment and tests are correct. The lab README and all existing exercise/homework Markdown instructions are read-only; only edit a separate student project README.
 
 The tutor may also explain concepts, interpret errors, suggest checks and discuss broad project ideas and options.
 
