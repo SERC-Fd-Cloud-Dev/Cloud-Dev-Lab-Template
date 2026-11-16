@@ -1,15 +1,24 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/universal
 {
-    "name": "Default Linux Universal",
+    "name": "Cloud Development Labs",
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-    "image": "mcr.microsoft.com/devcontainers/universal:6-linux",
+    "image": "ghcr.io/serc-computing/devcontainers/python-api:1",
 
     // Features to add to the dev container. More info: https://containers.dev/features.
     // "features": {},
 
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
-    // "forwardPorts": [],
+    "forwardPorts": [
+        8000
+    ],
+    "portsAttributes": {
+        "8000": {
+            "label": "FastAPI",
+            "onAutoForward": "notify",
+            "visibility": "private"
+        }
+    },
 
     // Use 'postCreateCommand' to run commands after the container is created.
     "postCreateCommand": ".devcontainer/scripts/check-features.sh", //&& code --install-extension https://github.com/SERC-Cloud-Dev-DF2A-2526/VS-Code-Extensions/releases/download/v0.0.2/services-manager-0.0.2.vsix",
@@ -19,6 +28,7 @@
         "vscode": {
             // Set *default* container specific settings.json values on container create.
             "settings": {
+                "servicesManager.preselectedServices": [],
                 "sqltools.connections": [
                     {
                         "mysqlOptions": {
@@ -68,11 +78,12 @@
 
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
-                "ms-python.python",
+                // "ms-python.python",
                 // "ms-dotnettools.csdevkit",
-                "redhat.vscode-yaml",
+                // "redhat.vscode-yaml",
                 "github.vscode-github-actions",
-                "ms-azuretools.vscode-containers",
+                // "ms-azuretools.vscode-containers",
+                "Postman.postman-for-vscode",
                 "mtxr.sqltools",
                 "mtxr.sqltools-driver-mysql",
                 "mtxr.sqltools-driver-pg",
