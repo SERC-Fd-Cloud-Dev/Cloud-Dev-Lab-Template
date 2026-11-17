@@ -1,172 +1,57 @@
 # Development Environment Guide
 
-### Understanding GitHub Copilot in This Lab
+## GitHub Copilot in the Cloud Development labs
 
-This Codespace has been configured with a *student-safe* version of GitHub Copilot.  
-This is intentional and designed to support your learning in the **Cloud Development** module.
+This Codespace supports your learning in Level 5 Cloud Development. **You are the developer**: you are responsible for writing, debugging, testing, deploying and explaining your own application.
 
----
+The repository provides **one Cloud Development Tutor** custom agent. It can use specialist skills as needed, so you do not need to switch between FastAPI, Database, Git, Testing, CI/CD, Deployment or Postman agents.
 
-## 🎯 Why Copilot Is Configured This Way
+## Getting help
 
-In this module, you are assessed on your ability to:
+Open GitHub Copilot Chat in VS Code/Codespaces and select **Cloud Development Tutor** in the agent picker. Ask normal questions; the tutor can draw on skills for Python, FastAPI, API design, databases (SQLite, PostgreSQL, MariaDB/MySQL and SQL Server), Postman, Git, CI/CD, security, deployment, debugging, testing and more.
 
-- Understand and apply cloud-native development principles  
-- Design and justify API structures  
-- Implement cloud services, CI/CD pipelines, security patterns, etc.  
-- Debug, reason about, and improve your own code  
+Useful prompts:
 
-These skills cannot be developed by simply accepting AI-generated solutions.  
-For that reason:
+- “Why is my FastAPI endpoint returning 422? Explain what to inspect without writing the fix.”
+- “My SQL Server foreign key insert fails; what evidence should I check?”
+- “Why does this GitHub Actions job fail only in CI?”
+- “How do Postman environment variables work for localhost and deployed APIs?”
+- “Review the approach in my existing code and suggest debugging steps.”
 
-### **Copilot Chat is enabled**
+## What Copilot **may** generate
 
-You can ask questions such as:
+The current assessment permits two specific kinds of generated artefact:
 
-- “Why am I getting a 422 error?”  
-- “What does this CI/CD step do?”  
-- “How should I structure a cloud-native API project?”  
-- “What does this error message mean?”  
+**Automated tests:** You may ask the tutor to write complete unit and integration tests, test-only fixtures/mocks, API/authorisation checks and Postman automated test scripts for behaviour you have specified or implemented. **You must inspect, run and understand these tests.** The tutor must not change your application code to make tests pass or weaken assertions to hide bugs.
 
-Copilot Chat will *explain concepts*, *guide you*, and *help you reflect*,  
-without generating complete assignment solutions.
+**Your project README:** You may ask the tutor to create or improve your project's `README.md` using evidence from the actual repository. Check that setup instructions, example usage and claims about deployment and tests are correct. The lab README and all existing exercise/homework Markdown instructions are read-only; only edit a separate student project README.
 
-### **Copilot Autocomplete (inline code suggestions) is disabled**
+The tutor may also explain concepts, interpret errors, suggest checks and discuss broad project ideas and options.
 
-This prevents situations where Copilot writes large portions of your assignment for you.
+## What Copilot **must not** generate
 
-You will still type your own code, reason through your design choices, and build the solution yourself.
+Do not ask it to write or replace:
 
----
+- Application code, FastAPI routes, CRUD logic, database models or SQL implementations.
+- Authorisation, validation, error handling or third-party integration code.
+- Dockerfiles, deployment scripts, GitHub Actions workflows or other deployment configuration.
+- The assessed requirements, endpoint design, architecture diagrams or decision rationale.
+- Your assessed report, evaluation, conclusions or personal reflections.
 
-## 🧭 What Copilot *Will* Do
+You must make and justify your own implementation and design decisions. If the tutor suggests prohibited code, do not use it; ask instead for an explanation or a diagnostic hint.
 
-Copilot will:
+## Inline suggestions and limitations
 
-- Give high-level explanations  
-- Offer conceptual guidance
-- Suggest debugging steps  
-- Comment on your code when you paste it into chat  
-- Provide pseudocode or partial patterns (never full implementations)  
-- Encourage good practice (testing, structure, documentation, security)  
+The workspace disables Copilot inline code suggestions while allowing Copilot Chat. This and the custom instructions **guide behaviour but cannot guarantee** that every AI interface complies. Follow the assignment's academic-integrity requirements regardless of what a tool offers.
 
-This helps you understand the *why* and *how* behind cloud development.
+## Verification and GenAI declaration
 
----
+Review, run and verify any permitted tests or README content before retaining it. Explain your own decisions and never claim a test or deployment succeeded if it was not checked.
 
-## 🚫 What Copilot *Will Not* Do
+**Record GenAI assistance in the required assignment declaration appendix**, including concept explanations, debugging, test generation and README generation. Declare the tool/model when shown, the use, what you retained and how you reviewed it. A declaration does not make prohibited use acceptable.
 
-To protect academic integrity—and to help you genuinely learn—it will **not**:
+Never paste passwords, tokens, API keys or sensitive personal information into Copilot.
 
-- Produce full, copy-pasteable solutions  
-- Generate complete FastAPI routes
-- Write working SQL schemas or ORM models for you  
-- Produce a full deployment pipeline or infrastructure config  
-- Complete assignment tasks on your behalf  
+## Further help
 
-If you ask for a full solution, Copilot will redirect you toward understanding and solving the problem yourself.
-
----
-
-## 📘 Why This Matters for Your Learning
-
-The assignment and module learning outcomes require you to:
-
-- **Explain, justify, and critique** your decisions  
-- Understand cloud-native architecture, APIs, SDLC, and reliability principles  
-- Build and explain how your own project works  
-- Debug cloud-based applications independently  
-
-If an AI wrote large parts of your project, you would struggle to:
-
-- Document what it does  
-- Justify your design decisions  
-- Debug or extend it  
-- Pass the module’s assessment  
-
-This configuration ensures you build **real, employable development skills**.
-
----
-
-## 🛠 How to Use Copilot Effectively
-
-Here are examples of good questions to ask:
-
-❓ *“What does this error mean?”*  
-❓ *“Why would a POST request return 500?”*  
-❓ *“What is the difference between PUT and PATCH?”*  
-❓ *“How does JWT authentication typically work?”*  
-❓ *“How should I structure my project folders for a clean FastAPI application?”*  
-❓ *“What should a CI pipeline include for a Python API?”*  
-
-Avoid asking Copilot to:
-
-- Write an endpoint
-- Build your database schema
-- Solve your entire task  
-- Write your report  
-
-Because it is intentionally prevented from doing these things.
-
----
-
-## 🧑‍💻 Your Development Environment Supports You — But You Are the Developer
-
-You are expected to:
-
-- Understand your own code  
-- Justify your design choices  
-- Demonstrate cloud-native reasoning  
-- Describe how your API works  
-- Debug and test your application  
-- Meet SLA, security, and reliability expectations  
-
-Copilot is here to help you **learn**, not to do the work for you.
-
----
-
-## 🤖 Custom Agents for Specialised Help
-
-In addition to Copilot Chat, this workspace includes **custom agents** that provide specialised guidance for different aspects of cloud development.
-
-Each agent is tailored to help you learn and implement specific technologies while maintaining the same academic integrity principles.
-
-### Available Agents
-
-| Agent | Purpose | Good Questions |
-|-------|---------|----------------|
-| **FastAPI Agent** | REST API design, routing, validation, error handling, project structure | "Why am I getting a 422 error?" / "How should I structure my FastAPI project?" |
-| **Database Agent** | SQL concepts, schema design, queries across multiple database engines | "How should my schema relate these entities?" / "Why does my query fail?" |
-| **Testing Agent** | Unit/integration/API testing, pytest, test design patterns, test automation | "How should I test this endpoint?" / "What test cases should I write?" |
-| **CI/CD Agent** | GitHub Actions workflows, pipeline design, automation, deployment gates | "How should my CI pipeline be structured?" / "Why did my workflow fail?" |
-| **Git Agent** | Source control, branching, merging, conflicts, GitHub workflows | "How do I resolve this merge conflict?" / "How should I structure my commits?" |
-| **Deployment Agent** | Deployment strategies, environment configuration, rollbacks, SLAs | "How does blue–green deployment work?" / "What environment variables do I need?" |
-| **Postman Agent** | API testing tools, request building, environment management, test scripts | "How do I create a Postman collection?" / "How do I test authentication?" |
-
-### How to Use Agents
-
-Ask a custom agent a question directly in **Copilot Chat**. The agent will:
-
-- Explain relevant concepts and principles
-- Suggest approaches and design patterns
-- Help you debug your own work
-- Ask clarifying questions about your implementation
-- Provide **pseudocode and partial examples** (never complete solutions)
-
-**Example workflow:**
-
-1. You have a FastAPI endpoint that's not working → Ask the **FastAPI Agent** to help you debug
-2. Your database queries are complex → Ask the **Database Agent** about SQL structure
-3. Your tests are failing → Ask the **Testing Agent** about test design
-4. Your CI pipeline has an error → Ask the **CI/CD Agent** to help interpret the logs
-
----
-
-## 📩 If You Need More Help
-
-Your lecturer, tutor, and peers are part of your support network.  
-Copilot and the custom agents are tools to help you **learn and reason** independently.
-
-Use them **wisely**, **ethically**, and **actively** as part of your learning.
-
----
+Your lecturer, lab resources and peers remain available. Use the tutor for understanding and verification, not as a substitute for your own engineering judgement.
