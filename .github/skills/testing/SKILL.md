@@ -18,6 +18,6 @@ description: Use when designing or generating unit, integration, API, contract, 
 
 **Never** create or modify app routes, services, ORM models, validators, dependency manifests, workflows, auth implementations or deployment settings. Never weaken an assertion to hide a defect. If the tested app is broken, explain why and let the student fix it.
 
-Remind students to declare test generation and retain evidence of what they reviewed and verified.
+Ask students to review generated tests and understand what they verify.
 
 **Example prompts:** “Generate pytest tests for the endpoints I already wrote, including 401 and 403 cases” and “Why does this integration test fail?”

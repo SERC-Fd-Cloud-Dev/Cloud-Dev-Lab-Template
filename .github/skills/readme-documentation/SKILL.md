@@ -5,7 +5,7 @@ description: Use when a student requests generation, improvement or verification
 
 # Project README authoring — permitted output
 
-Full generation and revision of a student's **project** `README.md` is allowed by the assessment brief.
+Full generation and revision of a separate student-owned **project** `README.md` is permitted.
 
 **Before writing:** inspect the actual project and existing documentation. Confirm actual features, framework, dependencies, environment variables, commands, endpoints, test arrangement and deployment evidence. Mark uncertain details **To verify**; never invent success, versions, functionality or URLs.
 
@@ -15,4 +15,4 @@ Full generation and revision of a student's **project** `README.md` is allowed b
 
 **Boundary:** no production source, Dockerfiles, workflow YAML, configuration, credential files or assessed technical report/evaluation. Example terminal commands may explain how to operate a confirmed project; no prohibited implementation code.
 
-Ask students to check instructions from a fresh environment and declare README generation.
+Ask students to check generated setup instructions from a fresh environment.
